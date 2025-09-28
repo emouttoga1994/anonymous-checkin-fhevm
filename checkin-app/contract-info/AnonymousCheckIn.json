@@ -1,0 +1,31 @@
+{
+  "address": "0xd45ce30660297F50C0e2C87C8434A8697B217A96",
+  "abi": [
+    "constructor()",
+    "event CheckInSessionCreated(uint256 indexed,address indexed,string,uint256,uint256)",
+    "event SessionEnded(uint256 indexed,address indexed)",
+    "event UserCheckedIn(uint256 indexed,address indexed,uint256)",
+    "function batchCheckIn(uint256[],bytes32[],bytes[])",
+    "function checkIn(uint256,bytes32,bytes)",
+    "function compareUserScores(address,address) returns (bytes32)",
+    "function createCheckInSession(string,string,uint256) returns (uint256)",
+    "function emergencyPause()",
+    "function emergencyUnpause()",
+    "function endCheckInSession(uint256)",
+    "function getActiveSessionsCount() view returns (uint256)",
+    "function getEncryptedCheckInData(uint256,address) view returns (bytes32)",
+    "function getEncryptedParticipantCount(uint256) view returns (bytes32)",
+    "function getEncryptedUserScore(address) view returns (bytes32)",
+    "function getSessionInfo(uint256) view returns ((address,string,string,uint256,uint256,bool,uint256))",
+    "function getTotalSessions() view returns (uint256)",
+    "function isParticipantCountAboveThreshold(uint256,bytes32,bytes) returns (bytes32)",
+    "function isUserCheckedIn(uint256,address) view returns (bytes32)",
+    "function nextSessionId() view returns (uint256)",
+    "function protocolId() pure returns (uint256)",
+    "function sessions(uint256) view returns (address,string,string,uint256,uint256,bool,uint256)"
+  ],
+  "network": "localhost",
+  "deployedAt": "2025-09-28T01:33:03.403Z",
+  "deploymentTx": "0xc2abb1459f66664593a08b1b485f716452dff2672e712d1923e0b4010f34d6d8",
+  "gasUsed": "1916334"
+}
